@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1578569143 source:f:\launchpad online jan2020\vonneumanbinarytodecimal\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<math.h>
+
