@@ -11,7 +11,6 @@ int main()
         if(sum>=0)
         cout<<n<<endl;
         else break;
-
     }
     return 0;
 }

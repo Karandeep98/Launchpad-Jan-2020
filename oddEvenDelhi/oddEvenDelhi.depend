@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578775789 source:f:\launchpad online jan2020\oddevendelhi\main.cpp
+	<iostream>
+	<string.h>
+
