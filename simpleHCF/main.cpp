@@ -1,29 +1,35 @@
 #include <iostream>
-
 using namespace std;
+
+int hcf(int a, int b)
+{
+	if (b == 0)
+		return a;
+	return hcf(b, a % b);
+
+}
+int findHCF(int arr[], int n)
+{
+    int result = arr[0];
+    for (int i = 1; i < n; i++)
+    {
+        result = hcf(arr[i], result);
+
+        if(result == 1)
+        {
+           return 1;
+        }
+    }
+    return result;
+}
 
 int main()
 {
-
-    int n,a[20],hcf=1;
-   cin>>n;
-   for(int i=0;i<n;i++){
-    cin>>a[i];
-   }
-   for(int j=2;j<10;j++){
-        int count=0;
-        for(int i=0;i<n;i++){
-    if(a[i]%j==0){
-        count++;
+    int a[20],n;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>a[i];
     }
-        }
-    if(count==n){
-    hcf*=j;
-    for(int k=0;k<n;k++){
-        a[k]/=j;
-    }
-        }
-   }
-cout<<hcf;
-    return 0;
+	cout<<findHCF(a,n);
+	return 0;
 }
