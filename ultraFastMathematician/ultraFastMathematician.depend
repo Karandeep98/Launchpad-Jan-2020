@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578831481 source:f:\launchpad online jan2020\ultrafastmathematician\main.cpp
+	<iostream>
+	<string.h>
+
